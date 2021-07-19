@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" width="15" height="15">
+	<title>Layer_3_copy</title>
+	<defs>
+		<image  width="15" height="15" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAAXNSR0IB2cksfwAAAO1QTFRFAAAA8ZUA8pcA8pcA8pcA8pcA85gA/6oA8pcA8pcA8pcA7pkA8pcA8pcA85cA8JgA85gA8pgA8pcA8pcA7pkA8ZgA8pcA9JYA9psA8pcA8pcA8pcA8pYA9JUA8pcA8pcA85cA8pcA8pYA8pYA85cA8pcA8pcA85IA8pcA8pcA8pcA8ZcA//8A8ZYA85YA8pYA8ZYA5pkA9JgA8pcA8pYA/44A8ZgA8pcA8pYA8pcA8pcA8ZgA8pcA85YA85cA8pcA8pcA85cA8pgA/58A85UA8pgA8pgA8pcA8pcA8ZgA85YA8pcA8pcA8ZcA8pcAeMsIpwAAAE90Uk5TADWOy9eiUgOH/7Yem/uRRT504NIPSPBEHNCMq3ow+fEW/SfIQu33FbDW/jYBOJKhWgov+HcJSu6NYNiUwVVT6LP1TQhBcnlz+ll833biTANbXh4AAACcSURBVHicTY7FEsJAEEQHCNI4AQIEC05wd3f//89hJYf0YV+9rqnZISJyOF2K20NWvD6I+APSgwiFI9GYiniCaxJaijOdgc6ZRU7O5QtFg0Etla1FFVTZW6s3LG+C/2G22lI7JroMPfSlD6AMGUZjTKaMszkWol8Cq7W+YRdpW1HsTH7e/gAcT6I4X663nUF34PEkW17A2+70+f7+GGUOJt3YmvcAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" href="#img1" x="0" y="0" />
+</svg>
