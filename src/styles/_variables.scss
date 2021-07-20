@@ -1,0 +1,28 @@
+//color text
+$color-primary: #f29700;
+$color-extra-dark: #282f37;
+$color-dark: hsl(212, 15%, 19%);
+$color-darkgray: #3c4148;
+$color-gray: #878787;
+$color-gray-second: #6f6f6f;
+$color-white: #fff; 
+$color-link: #0e65b7;
+
+//color background
+$bg-dark: $color-darkgray;
+$bg-primary:$color-primary;
+$bg-gray: #eeeeee;
+
+//color border
+$border-lightgray: #e6e6e6;
+$border-white: #fff;
+$border-input: #e5e5e5;
+$border-gray: #d1d1d1;
+
+//shadow
+$shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+
+//fonts
+$fonts-main: 'Arial', sans-serif;
+$fonts-title: 'Roboto', sans-serif;
+$font-logo: 'Ubuntu';
