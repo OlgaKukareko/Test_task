@@ -35,20 +35,54 @@ function build_sass() {
         .pipe(sass().on('error', sass.logError)) // compile scss to css
         .pipe(sourcemaps.write()) // write sourcemaps to css files
         .pipe(concat(final_css_name)) // concatenate all compiled css files to 1 file
-        .pipe(autoprefixer({ browsers: browser_list })) // add vendor prefixes
+        .pipe(autoprefixer({ 
+            overrideBrowserslist: ['last 8 versions'],
+            browsers: [
+              'Android >= 4',
+              'Chrome >= 20',
+              'Firefox >= 24',
+              'Explorer >= 11',
+              'iOS >= 6',
+              'Opera >= 12',
+              'Safari >= 6',
+            ],
+        })) // add vendor prefixes
         .pipe(gulp.dest(destination_path)) // put final css to destination path
         .pipe(browserSync.stream()); // reload browser
 }
 
-gulp.task('svgSprite', function() {
-    return gulp.src('./src/images/icons/*.svg') // svg files for sprite
+gulp.task('svgSprite', function () {
+    return gulp.src('src/images/icons/*.svg')
+    // minify svg
+        .pipe(svgmin({
+            js2svg: {
+                pretty: true
+            }
+        }))
+        // remove all fill, style and stroke declarations in out shapes
+        .pipe(cheerio({
+            run: function ($) {
+                $('[fill]').removeAttr('fill');
+                $('[stroke]').removeAttr('stroke');
+                $('[style]').removeAttr('style');
+            },
+            parserOptions: {xmlMode: true}
+        }))
+        // cheerio plugin create unnecessary string '&gt;', so replace it.
+        .pipe(replace('&gt;', '>'))
+        // build svg sprite
         .pipe(svgSprite({
             mode: {
-                stack: {
-                    sprite: "../sprite.svg" //sprite file name
+                symbol: {
+                    sprite: "../sprite.svg",
+                    render: {
+                        scss: {
+                            dest:'_sprite.scss',
+                            template: "src/styles/components/_sprite-tmp.scss"
+                        }
+                    }
                 }
-            },
+            }
         }))
-        .pipe(gulp.dest('./images/icons'));
-});
-exports.default = sync;
+        .pipe(gulp.dest('src/images/'));});
+    exports.default = sync;
