@@ -12,32 +12,37 @@
 </head>
 
 <body>
-    <header class="page-header container-fluid">
-        <div class="row">
-            <a href="/index.html" class="header__logo">
-                <img class="logo__image" src="/src/images/logo.png" alt="logo">
-                <div class="logo__text">
-                    <h4 class="logo__title color-primary">Логотип</h4>
-                    <span class="logo__subtitle">Инжиниринговая компания</span>
+    <header class="page-header">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <a href="/index.html" class="header__logo col-md-3  d-flex flex-row align-items-center">
+                    <img class="logo__image" src="/src/images/logo.png" alt="logo">
+                    <div class="logo__text">
+                        <h4 class="logo__title color-primary">Логотип</h4>
+                        <span class="logo__subtitle">Инжиниринговая компания</span>
+                    </div>
+                </a>
+                <div class="header__content col-md-3">
+                    <div class="header__contacts d-flex flex-column align-items-end">
+                        <span class="header__contacts-title">Консультации и заказ услуг</span>
+                        <a class="header__contacts-phone" href="tel:+3750222231010">
+                            <svg class="icon gallery__icon">
+                                <use xlink:href="./src/images/sprite.svg#phone"></use>
+                            </svg>
+                            +375 (0222) 23-10-10
+                        </a>
+                        <a class="header__contacts-email" href="mailto:">
+                            Написать нам
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <input type="search" name="search" id="search">
+                        <label for="search">
+                            <i class="fa fa-search color-primary" aria-hidden="true"></i>
+                        </label>
+                    </div>
                 </div>
-            </a>
-            <div class="header__content">
-                <div class="header__contacts">
-                    <span></span>
-                    <a href="tel:+3750222231010">
-                        +375 (0222) 23-10-10
-                    </a>
-                    <a href="mailto:">
-                        Написать нам
-                    </a>
-                </div>
-                <div class="header__search">
-                    <input type="search" name="search" id="search">
-                    <label for="search">
-                        <i class="fa fa-search color-primary" aria-hidden="true"></i>
-                    </label>
-                </div>
-            </div>
+            </div>    
         </div>
         <nav class="top-navigation d-flex justify-content-center">
             <ul class="nav justify-content-center">
@@ -74,7 +79,7 @@
                     <img class="slider__image" src="/src/images/slider-image-1.jpeg" alt="slider-image">
                     <div class="slider__wrapper">
                         <span>Наши компетенции</span>
-                        <h1>Объекты химимческой промышленности</h1>
+                        <h1>Объекты химической промышленности</h1>
                         <p>Важнейшим преимуществом компании является способность проектировать и строить «под ключ». При этом данные процессы ведутся одновременно, что позволяет заказчику значительно сократить общий строительный цикл объекта.</p>    
                     </div>
                 </div>
@@ -82,7 +87,7 @@
                     <img class="slider__image" src="/src/images/slider-image-2.jpeg" alt="slider-image">
                     <div class="slider__wrapper">
                         <span>Наши компетенции</span>
-                        <h1>Объекты химимческой промышленности</h1>
+                        <h1>Объекты химической промышленности</h1>
                         <p>Важнейшим преимуществом компании является способность проектировать и строить «под ключ». При этом данные процессы ведутся одновременно, что позволяет заказчику значительно сократить общий строительный цикл объекта.</p>    
                     </div>
                 </div>
@@ -90,7 +95,7 @@
                     <img class="slider__image" src="/src/images/slider-image-3.jpeg" alt="slider-image">
                     <div class="slider__wrapper">
                         <span>Наши компетенции</span>
-                        <h1>Объекты химимческой промышленности</h1>
+                        <h1>Объекты химической промышленности</h1>
                         <p>Важнейшим преимуществом компании является способность проектировать и строить «под ключ». При этом данные процессы ведутся одновременно, что позволяет заказчику значительно сократить общий строительный цикл объекта.</p>    
                     </div>
                 </div>
@@ -98,7 +103,7 @@
                     <img class="slider__image" src="/src/images/slider-image-4.jpeg" alt="slider-image">
                     <div class="slider__wrapper">
                         <span>Наши компетенции</span>
-                        <h1>Объекты химимческой промышленности</h1>
+                        <h1>Объекты химической промышленности</h1>
                         <p>Важнейшим преимуществом компании является способность проектировать и строить «под ключ». При этом данные процессы ведутся одновременно, что позволяет заказчику значительно сократить общий строительный цикл объекта.</p>    
                     </div>
                 </div>
@@ -106,14 +111,59 @@
                     <img class="slider__image" src="/src/images/slider-image-5.jpeg" alt="slider-image">
                     <div class="slider__wrapper">
                         <span>Наши компетенции</span>
-                        <h1>Объекты химимческой промышленности</h1>
+                        <h1>Объекты химической промышленности</h1>
                         <p>Важнейшим преимуществом компании является способность проектировать и строить «под ключ». При этом данные процессы ведутся одновременно, что позволяет заказчику значительно сократить общий строительный цикл объекта.</p>    
                     </div>
                 </div>
                 <!--Добавлены сторонние картинки для визуального эффекта-->
             </div>
         </section>
-        <section id="services"></section>
+        <section id="services">
+            <div class="services__gallery container">
+                <ul class="gallery__list">
+                    <li class="gallery__item">
+                        <a href="" class="gallery__link">
+                            <svg class="icon gallery__icon">
+                                <use xlink:href="./src/images/sprite.svg#services-design-icon"></use>
+                            </svg>
+                            Услуги проектирования
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="" class="gallery__link">
+                            <svg class="icon gallery__icon">
+                                <use xlink:href="./src/images/sprite.svg#сonstruction-work-icon"></use>
+                            </svg>
+                            Строительно-монтажные работы
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="" class="gallery__link">
+                            <svg class="icon gallery__icon">
+                                <use xlink:href="./src/images/sprite.svg#expert-activity-icon"></use>
+                            </svg>
+                            Экспертная деятельность
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="" class="gallery__link">
+                            <svg class="icon gallery__icon">
+                                <use xlink:href="./src/images/sprite.svg#technical-service-icon"></use>
+                            </svg>
+                            Техническое обслуживание
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="" class="gallery__link">
+                            <svg class="icon gallery__icon">
+                                <use xlink:href="/src/images/sprite.svg#testing-laboratory-icon"></use>
+                              </svg>
+                            Испытательная лаборатория
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <section id="objects"></section>
         <section id="purchases"></section>
         <section id="partners"></section>
