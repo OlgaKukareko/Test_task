@@ -1,0 +1,123 @@
+//font-family UBUNTU
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+//font-family ROBOTO
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/src/fonts/Roboto/Roboto-Regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('/src/fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Roboto/Roboto-Regular.woff') format('woff'),
+        url('/src/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/src/fonts/Roboto/Roboto-Bold.eot');
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+        url('/src/fonts/Roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Roboto/Roboto-Bold.woff') format('woff'),
+        url('/src/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/src/fonts/Roboto/Roboto-Black.eot');
+    src: local('Roboto Black'), local('Roboto-Black'),
+        url('/src/fonts/Roboto/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Roboto/Roboto-Black.woff') format('woff'),
+        url('/src/fonts/Roboto/Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/src/fonts/Roboto/Roboto-Light.eot');
+    src: local('Roboto Light'), local('Roboto-Light'),
+        url('/src/fonts/Roboto/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Roboto/Roboto-Light.woff') format('woff'),
+        url('/src/fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/src/fonts/Roboto/Roboto-Thin.eot');
+    src: local('Roboto Thin'), local('Roboto-Thin'),
+        url('/src/fonts/Roboto/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Roboto/Roboto-Thin.woff') format('woff'),
+        url('/src/fonts/Roboto/Roboto-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+//font-family ARIAL MT
+
+@font-face {
+    font-family: 'Arial MT';
+    src: url('/src/fonts/Arial-MT/Arial-MT.eot');
+    src: local('Arial MT'), local('Arial-MT'),
+        url('/src/fonts/Arial-MT/Arial-MT.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Arial-MT/Arial-MT.woff') format('woff'),
+        url('/src/fonts/Arial-MT/Arial-MT.woff2') format('woff2'),
+        url('/src/fonts/Arial-MT/Arial-MT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial MT';
+    src: url('/src/fonts/Arial-MT/Arial-MT-Bold.eot');
+    src: local('Arial MT Bold'), local('Arial-MT-Bold'),
+        url('/src/fonts/Arial-MT/Arial-MT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Arial-MT/Arial-MT-Bold.woff') format('woff'),
+        url('/src/fonts/Arial-MT/Arial-MT-Bold.woff2') format('woff2'),
+        url('/src/fonts/Arial-MT/Arial-MT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial MT';
+    src: url('/src/fonts/Arial-MT/Arial-MT-Extra-Bold.eot');
+    src: local('Arial MT Extra Bold'), local('Arial-MT-Extra-Bold'),
+        url('/src/fonts/Arial-MT/Arial-MT-Extra-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Arial-MT/Arial-MT-Extra-Bold.woff') format('woff'),
+        url('/src/fonts/Arial-MT/Arial-MT-Extra-Bold.woff2') format('woff2'),
+        url('/src/fonts/Arial-MT/Arial-MT-Extra-Bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial MT';
+    src: url('/src/fonts/Arial-MT/Arial-MT-Black.eot');
+    src: local('Arial MT Black'), local('Arial-MT-Black'),
+        url('/src/fonts/Arial-MT/Arial-MT-Black.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Arial-MT/Arial-MT-Black.woff') format('woff'),
+        url('/src/fonts/Arial-MT/Arial-MT-Black.woff2') format('woff2'),
+        url('/src/fonts/Arial-MT/Arial-MT-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial MT';
+    src: url('/src/fonts/Arial-MT/Arial-MT-Light.eot');
+    src: local('Arial MT Light'), local('Arial-MT-Light'),
+        url('/src/fonts/Arial-MT/Arial-MT-Light.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Arial-MT/Arial-MT-Light.woff') format('woff'),
+        url('/src/fonts/Arial-MT/Arial-MT-Light.woff2') format('woff2'),
+        url('/src/fonts/Arial-MT/Arial-MT-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+

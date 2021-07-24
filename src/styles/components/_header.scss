@@ -1,0 +1,120 @@
+.header {
+    &__logo {
+        text-decoration: none;
+        height: 69px;
+
+        .logo {
+            &__text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                align-self: center;
+            }
+
+            &__title {
+                color: #f29700;
+                font-family: $font-logo;
+                font-size: 24px;
+                line-height: 20px;
+                text-align: left;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                margin-bottom: 0;
+            }
+
+            &__subtitle {
+                color: #6f6f6f;
+                font-family: $fonts-header;
+                font-size: 12px;
+                line-height: 20px;
+                text-align: left;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__contacts {
+        &-title {
+            color: #878787;
+            font-family: $fonts-header;
+            font-size: 12px;
+            line-height: 20px;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+        }
+
+        &-icon {
+            width: 13px;
+            min-width: 13px;
+            height: 18px;
+            min-height: 18px;
+            margin-right: 11px;
+        }
+
+        &-phone {
+            color: #282f37;
+            font-family: $fonts-header;
+            font-size: 18px;
+            line-height: 20px;
+            text-align: left;
+            font-weight: bold;
+            letter-spacing: normal;
+            line-height: normal;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                color: $color-primary;
+                transition: color 0.3s linear;
+            }
+        }
+
+        &-email {
+            color: #0e65b7;
+            font-family: $fonts-header;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: left;
+            text-decoration: underline;
+            font-style: normal;
+            letter-spacing: normal;
+
+            &:hover {
+                color: $color-primary;
+                transition: color 0.3s linear;
+            }
+        }
+    }
+
+    &__search {
+        position: absolute;
+        top: 0;
+        right: -35px;
+        width: 100%;
+        height: 100%;
+        background-color: $bg-white;
+
+        #search {
+            margin-right: 16px;
+            height: 25px;
+            border: 1px solid $border-input;
+            background-color: $bg-white;
+            border-radius: 2px;
+
+            &:focus {
+                box-shadow: none;
+                outline: none;
+                border-color: $border-primary;
+            }
+        }
+    }
+}
