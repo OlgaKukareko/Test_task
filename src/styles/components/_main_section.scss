@@ -8,7 +8,11 @@
         .slick-track {
             height: 100%;
         }
-
+        .slick-slide {
+            &>div {
+                height: 100%;
+            }
+        }
         .slick-dots {
             list-style: none;
             height: 11px;

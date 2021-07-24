@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).on('ready', function() {
     $('.slider').slick({ //подключение slick slider
         infinite: true,
         autoplay: true,
