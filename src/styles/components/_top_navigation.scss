@@ -2,7 +2,12 @@
     border-top: 1px solid $border-gray;
     flex-direction: row-reverse;
     padding: 0;
+    height: 44px;
+
     .navbar-nav {
+        background-color: $bg-white;
+        z-index: 1000;
+
         .nav {
             &-item {
                 height: 43px;
@@ -33,15 +38,17 @@
                     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
                 }
             }
-        }    
+        }
     }
     .navbar-toggler {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: center;
         padding: 0;
         margin: 0 16px;
         display: none;
+        height: 44px;
 
         &::before {
             content: "";
@@ -60,7 +67,7 @@
             background: $bg-dark;
         }
 
-        &-icon {
+        .icon {
             height: 2px;
             width: 18px;
             background: $bg-dark;
@@ -73,9 +80,13 @@
 
             &::before,
             &::after,
-            &-icon {
-                background: red;
+            .icon {
+                background: $bg-primary;
+                transition: background 0.2s linear;
             }
+        }
+        @media screen and (max-width:768px) {
+            display: flex;
         }
 
     }
