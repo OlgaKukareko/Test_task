@@ -1,5 +1,4 @@
 #services {
-    height: 123px;
     .gallery {
         height: 100%;
         &__list {
@@ -8,6 +7,10 @@
             margin-bottom: 0;
             height: 100%;
         }
+        &__item {
+            height: 123px;
+        }
+
         &__link {
             display: flex;
             align-items: center;
