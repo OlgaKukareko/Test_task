@@ -1,18 +1,17 @@
 'use strict';
 
-const path_to_main_scss_file = '/src/styles/style.scss'; // путь до главного scss файла
-const scss_path_to_watch = 'styles/**/*.scss'; // наблюдать за изменениями во всех папках в папке 'styles', scss с любым именем файла
-const destination_path = 'dist/'; // папка куда положить итоговый css
+const path_to_main_scss_file = './src/styles/main.scss'; // путь до главного scss файла
+const scss_path_to_watch = './src/styles/**/*.scss'; // наблюдать за изменениями во всех папках в папке 'styles', scss с любым именем файла
+const destination_path = './dist/'; // папка куда положить итоговый css
 const final_css_name = 'styles.css'; // имя итоговогой файла
 
 
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
-const browser_list = ['last 2 versions', 'ie >= 10'];
 const svgSprite = require('gulp-svg-sprite');;
 const svgmin = require('gulp-svgmin');
 const cheerio = require('gulp-cheerio');
@@ -25,8 +24,10 @@ function sync() {
         }
     });
 
-    gulp.watch(scss_path_to_watch, { ignoreInitial: false }, build_sass);
-    gulp.watch("/src/pages/*.html").on('change', browserSync.reload);
+    gulp.watch(scss_path_to_watch, {
+        ignoreInitial: false
+    }, build_sass);
+    gulp.watch("./src/pages/*.html").on('change', browserSync.reload);
 }
 
 function build_sass() {
@@ -35,16 +36,16 @@ function build_sass() {
         .pipe(sass().on('error', sass.logError)) // compile scss to css
         .pipe(sourcemaps.write()) // write sourcemaps to css files
         .pipe(concat(final_css_name)) // concatenate all compiled css files to 1 file
-        .pipe(autoprefixer({ 
+        .pipe(autoprefixer({
             overrideBrowserslist: ['last 8 versions'],
             browsers: [
-              'Android >= 4',
-              'Chrome >= 20',
-              'Firefox >= 24',
-              'Explorer >= 11',
-              'iOS >= 6',
-              'Opera >= 12',
-              'Safari >= 6',
+                'Android >= 4',
+                'Chrome >= 20',
+                'Firefox >= 24',
+                'Explorer >= 11',
+                'iOS >= 6',
+                'Opera >= 12',
+                'Safari >= 6',
             ],
         })) // add vendor prefixes
         .pipe(gulp.dest(destination_path)) // put final css to destination path
@@ -52,7 +53,7 @@ function build_sass() {
 }
 
 gulp.task('svgSprite', function () {
-    return gulp.src('src/images/icons/*.svg')
+    return gulp.src('./src/images/icons/*.svg')
     // minify svg
         .pipe(svgmin({
             js2svg: {
@@ -66,7 +67,9 @@ gulp.task('svgSprite', function () {
                 $('[stroke]').removeAttr('stroke');
                 $('[style]').removeAttr('style');
             },
-            parserOptions: {xmlMode: true}
+            parserOptions: {
+                xmlMode: true
+            }
         }))
         // cheerio plugin create unnecessary string '&gt;', so replace it.
         .pipe(replace('&gt;', '>'))
@@ -77,12 +80,13 @@ gulp.task('svgSprite', function () {
                     sprite: "../sprite.svg",
                     render: {
                         scss: {
-                            dest:'_sprite.scss',
-                            template: "src/styles/components/_sprite-tmp.scss"
+                            dest: '_sprite.scss',
+                            template: "./src/styles/components/_sprite-tmp.scss"
                         }
                     }
                 }
             }
         }))
-        .pipe(gulp.dest('src/images/'));});
-    exports.default = sync;
+        .pipe(gulp.dest('./src/images/'));
+});
+exports.default = sync;

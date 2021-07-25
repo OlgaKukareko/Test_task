@@ -1,0 +1,13 @@
+.color-prymary {
+    color: $color-primary;
+}
+body {
+    scroll-behavior: smooth;
+}
+html {
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar { 
+        width: 0; 
+    }    
+}

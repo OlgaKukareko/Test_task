@@ -1,0 +1,164 @@
+.header {
+    &__logo {
+        text-decoration: none;
+        height: 69px;
+        margin-left: 34px;
+
+        .logo {
+            &__text {
+                @include flex-column;
+                align-items: flex-start;
+                align-self: center;
+            }
+
+            &__title {
+                color: $color-primary;
+                font-family: $font-logo;
+                font-size: 24px;
+                line-height: 20px;
+                text-align: left;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                margin-bottom: 0;
+            }
+
+            &__subtitle {
+                color: $color-gray-second;
+                font-family: $fonts-header;
+                font-size: 12px;
+                line-height: 20px;
+                text-align: left;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+            }
+        }
+
+        @media screen and (max-width:992px) {
+            margin-left: 0;
+        }
+
+        @media screen and (max-width:576px) {
+            justify-content: center;
+        }
+    }
+
+    &__content {
+        position: relative;
+        height: fit-content;
+        padding-right: 37px;
+
+        @media screen and (max-width:576px) {
+            padding-right: 0;
+            margin-top: 16px;
+        }
+
+    }
+
+    &__contacts {
+        &-title {
+            color: $color-gray;
+            font-family: $fonts-header;
+            font-size: 12px;
+            line-height: 20px;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            margin-bottom: 5px;
+        }
+
+        &-icon {
+            width: 13px;
+            min-width: 13px;
+            height: 18px;
+            min-height: 18px;
+            margin-right: 11px;
+        }
+
+        &-phone {
+            color: $color-extra-dark;
+            font-family: $fonts-header;
+            font-size: 18px;
+            line-height: 20px;
+            text-align: left;
+            font-weight: bold;
+            letter-spacing: normal;
+            line-height: normal;
+            text-decoration: none;
+            @include flex-center;
+
+            &:hover {
+                color: $color-primary;
+                transition: color 0.3s linear;
+            }
+        }
+
+        &-email {
+            color: $color-link;
+            font-family: $fonts-header;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: left;
+            text-decoration: underline;
+            font-style: normal;
+            letter-spacing: normal;
+
+            &:hover {
+                color: $color-primary;
+                transition: color 0.3s linear;
+            }
+        }
+        @media screen and (max-width:576px) {
+            align-items: center !important;
+        }
+    }
+
+    &__search {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 30px;
+        padding-right: 11px;
+        background-color: $bg-white;
+        flex-wrap: nowrap;
+        overflow: hidden;
+
+        &-icon {
+            width: 15px;
+            height: 15px;
+        }
+
+        #search {
+            margin-right: 16px;
+            height: 25px;
+            border: 1px solid $border-input;
+            background-color: $bg-white;
+            border-radius: 2px;
+            min-width: 241px;
+
+            &:focus {
+                box-shadow: none;
+                outline: none;
+                border-color: $border-primary;
+            }
+        }
+        .search {
+            border: none;
+            background: transparent;
+            padding: 0;
+            height: 25px;
+            @include flex-center;
+        }
+        &.full {
+            width: auto;
+
+            @media screen and (max-width:576px) {
+                width: 100%;
+                padding-left: 16px;
+            }
+    
+        }
+    }
+}
