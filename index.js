@@ -9,4 +9,11 @@ $(document).on('ready', function() {
         fade: true,
         cssEase: 'linear'
     });
+
+    // добавление класс для навигации
+
+    $('.nav-link').click(function(){
+        $(this).addClass("active");
+        $(".nav-link").not(this).removeClass("active");
+        });
   });

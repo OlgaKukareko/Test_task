@@ -116,5 +116,10 @@
                 border-color: $border-primary;
             }
         }
+        .search {
+            border: none;
+            background: transparent;
+            padding: 0;
+        }
     }
 }
