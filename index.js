@@ -9,4 +9,20 @@ $(document).on('ready', function() {
         fade: true,
         cssEase: 'linear'
     });
-  });
+
+    // добавление класс для навигации
+
+    $('.nav-link').click(function(){
+        $(this).addClass("active");
+        $(".nav-link").not(this).removeClass("active");
+    });
+
+    $('.search .icon').on('click', () => {
+        $('.header__search').addClass('full');
+
+        setTimeout(function(){
+            $('.header__search').removeClass('full');
+        }, 5000);
+    });
+    
+});

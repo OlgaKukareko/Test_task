@@ -38,6 +38,7 @@
 
     &__content {
         position: relative;
+        height: fit-content;
     }
 
     &__contacts {
@@ -98,10 +99,17 @@
     &__search {
         position: absolute;
         top: 0;
-        right: -35px;
-        width: 100%;
+        right: -30px;
         height: 100%;
+        width: 30px;
         background-color: $bg-white;
+        flex-wrap: nowrap;
+        overflow: hidden;
+
+        &-icon {
+            width: 15px;
+            height: 15px;
+        }
 
         #search {
             margin-right: 16px;
@@ -109,12 +117,21 @@
             border: 1px solid $border-input;
             background-color: $bg-white;
             border-radius: 2px;
+            min-width: 241px;
 
             &:focus {
                 box-shadow: none;
                 outline: none;
                 border-color: $border-primary;
             }
+        }
+        .search {
+            border: none;
+            background: transparent;
+            padding: 0;
+        }
+        &.full {
+            width: auto;
         }
     }
 }
