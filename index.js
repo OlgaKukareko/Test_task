@@ -12,11 +12,12 @@ $(document).on('ready', function() {
 
     // добавление класс для навигации
 
-    $('.nav-link').click(function(){
+    $('.nav-link').click( function() {
         $(this).addClass("active");
         $(".nav-link").not(this).removeClass("active");
     });
 
+    //разворачивание блока поиска
     $('.search .icon').on('click', () => {
         $('.header__search').addClass('full');
 
@@ -24,5 +25,10 @@ $(document).on('ready', function() {
             $('.header__search').removeClass('full');
         }, 5000);
     });
+
+    //открытие меню
+    $('.navbar-toggler').on('click', () => {
+        $('.navbar-toggler').next('.navbar-nav').toggle('show');
+    })
     
 });
