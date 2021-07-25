@@ -14,9 +14,7 @@
             }
             &-link {
                 height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex-center;
                 padding-left: 20px;
                 padding-right: 20px;
                 color: $color-darkgray;
@@ -41,8 +39,7 @@
         }
     }
     .navbar-toggler {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: flex-start;
         justify-content: center;
         padding: 0;

@@ -15,9 +15,7 @@
         }
 
         &__link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-center;
             text-decoration: none;
             height: 100%;
             padding-left: 17px;

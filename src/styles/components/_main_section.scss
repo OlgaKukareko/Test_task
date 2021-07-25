@@ -19,9 +19,7 @@
             list-style: none;
             height: 11px;
             margin-bottom: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-center;
             position: absolute;
             bottom: 27px;
             li {
@@ -88,8 +86,7 @@
                 right: 0;
                 bottom: 0;
                 margin: auto;
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
                 justify-content: center;
 
                 @media screen and (max-width:576px) {
@@ -115,9 +112,7 @@
                 line-height: 60px;
                 text-align: left;
                 text-transform: uppercase;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex-center;
                 margin-bottom: 11px;
             }
 

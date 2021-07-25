@@ -6,8 +6,7 @@
 
         .logo {
             &__text {
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
                 align-items: flex-start;
                 align-self: center;
             }
@@ -87,8 +86,7 @@
             letter-spacing: normal;
             line-height: normal;
             text-decoration: none;
-            display: flex;
-            align-items: center;
+            @include flex-center;
 
             &:hover {
                 color: $color-primary;
@@ -151,8 +149,7 @@
             background: transparent;
             padding: 0;
             height: 25px;
-            display: flex;
-            align-items: center;
+            @include flex-center;
         }
         &.full {
             width: auto;
