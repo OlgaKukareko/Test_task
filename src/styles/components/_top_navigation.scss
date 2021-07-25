@@ -2,36 +2,38 @@
     border-top: 1px solid $border-gray;
     flex-direction: row-reverse;
     padding: 0;
-    .nav {
-        &-item {
-            height: 43px;
-        }
-        &-link {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-left: 20px;
-            padding-right: 20px;
-            color: $color-darkgray;
-            font-family: $fonts-header;
-            font-size: 15px;
-            font-weight: bold;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: 20px;
-            background: transparent;
-            &.active {
-                background: $bg-dark;
-                color: $color-white;
-                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    .navbar-nav {
+        .nav {
+            &-item {
+                height: 43px;
             }
-            &:hover {
-                background: $bg-primary;
-                color: $color-white;
-                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+            &-link {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: 20px;
+                padding-right: 20px;
+                color: $color-darkgray;
+                font-family: $fonts-header;
+                font-size: 15px;
+                font-weight: bold;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 20px;
+                background: transparent;
+                &.active {
+                    background: $bg-dark;
+                    color: $color-white;
+                    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+                }
+                &:hover {
+                    background: $bg-primary;
+                    color: $color-white;
+                    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+                }
             }
-        }
+        }    
     }
     .navbar-toggler {
         display: flex;
@@ -39,6 +41,7 @@
         align-items: flex-start;
         padding: 0;
         margin: 0 16px;
+        display: none;
 
         &::before {
             content: "";
