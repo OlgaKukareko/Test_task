@@ -15,5 +15,14 @@ $(document).on('ready', function() {
     $('.nav-link').click(function(){
         $(this).addClass("active");
         $(".nav-link").not(this).removeClass("active");
-        });
-  });
+    });
+
+    $('.search .icon').on('click', () => {
+        $('.header__search').addClass('full');
+
+        setTimeout(function(){
+            $('.header__search').removeClass('full');
+        }, 5000);
+    });
+    
+});
