@@ -33,7 +33,7 @@
                     min-width: 10px;
                     height: 11px;
                     min-height: 11px;
-                    border: 1px solid #fff;
+                    border: 1px solid $border-white;
                     background: transparent;
                     padding: 0;
                     &:focus {
@@ -101,12 +101,12 @@
 
             &__our-competencies {
                 background-color: $bg-primary;
-                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+                box-shadow: $shadow;
                 color: $color-white;
                 height: 29px;
                 padding: 0 9px;
                 width: fit-content;
-                color: #ffffff;
+                color: $color-white;
                 font-family: $fonts-main;
                 font-size: 16px;
                 font-weight: bold;
@@ -122,7 +122,7 @@
             }
 
             &__title {
-                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+                text-shadow: $shadow;
                 color: $color-white;
                 font-family: $fonts-main;
                 font-size: 60px;

@@ -25,8 +25,8 @@
             border: 1px solid transparent;
 
             &:hover {
-                border-color:#e6e6e6;
-                background-color: #eeeeee;
+                border-color:$border-lightgray;
+                background-color: $bg-gray;
             }
         }
         &__icon {
@@ -34,7 +34,7 @@
             margin-right: 16px;
         }
         &__title {
-            color: #3c4148;
+            color: $color-darkgray;
             font-family: $fonts-header;
             font-size: 13px;
             font-weight: bold;

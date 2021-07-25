@@ -13,7 +13,7 @@
             }
 
             &__title {
-                color: #f29700;
+                color: $color-primary;
                 font-family: $font-logo;
                 font-size: 24px;
                 line-height: 20px;
@@ -25,7 +25,7 @@
             }
 
             &__subtitle {
-                color: #6f6f6f;
+                color: $color-gray-second;
                 font-family: $fonts-header;
                 font-size: 12px;
                 line-height: 20px;
@@ -59,7 +59,7 @@
 
     &__contacts {
         &-title {
-            color: #878787;
+            color: $color-gray;
             font-family: $fonts-header;
             font-size: 12px;
             line-height: 20px;
@@ -78,7 +78,7 @@
         }
 
         &-phone {
-            color: #282f37;
+            color: $color-extra-dark;
             font-family: $fonts-header;
             font-size: 18px;
             line-height: 20px;
@@ -97,7 +97,7 @@
         }
 
         &-email {
-            color: #0e65b7;
+            color: $color-link;
             font-family: $fonts-header;
             font-size: 12px;
             line-height: 20px;

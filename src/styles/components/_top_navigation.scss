@@ -30,12 +30,12 @@
                 &.active {
                     background: $bg-dark;
                     color: $color-white;
-                    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+                    box-shadow: $shadow;
                 }
                 &:hover {
                     background: $bg-primary;
                     color: $color-white;
-                    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+                    box-shadow: $shadow;
                 }
             }
         }
